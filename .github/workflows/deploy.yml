@@ -8,10 +8,10 @@ on:
 env:
   
   # alphanumeric string under 14 characters
-  RESOURCE_GROUP_NAME: store
+  RESOURCE_GROUP_NAME: mariostore
 
   # specify your preferred region
-  REGION: westus
+  REGION: uaenorth
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
       image: mcr.microsoft.com/azure-dev-cli-apps:latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Log in with Azure
         uses: azure/login@v1
